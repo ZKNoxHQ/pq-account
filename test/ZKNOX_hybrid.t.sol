@@ -2,14 +2,16 @@
 pragma solidity ^0.8.13;
 
 import {Test, console} from "forge-std/Test.sol";
-import {ZKNOX_HybridVerifier} from "../src/ZKNOX_hybrid.sol";
+
+import {Constants} from "ETHDILITHIUM/test/ZKNOX_seed.sol";
+import {PythonSigner} from "ETHDILITHIUM/src/ZKNOX_PythonSigner.sol";
 import {DeployPKContract} from "ETHDILITHIUM/script/Deploy_MLDSA_PK.s.sol";
 import {DeployPKContract as DeployMLDSAETHPKContract} from "ETHDILITHIUM/script/Deploy_MLDSAETH_PK.s.sol";
 import {Script_Deploy_Dilithium} from "ETHDILITHIUM/script/DeployDilithium.s.sol";
 import {Script_Deploy_ETHDilithium} from "ETHDILITHIUM/script/DeployETHDilithium.s.sol";
 import {Script_Deploy_ECDSA} from "ETHDILITHIUM/script/DeployECDSA.s.sol";
-import {Constants} from "ETHDILITHIUM/test/ZKNOX_seed.sol";
-import {PythonSigner} from "ETHDILITHIUM/src/ZKNOX_PythonSigner.sol";
+
+import {ZKNOX_HybridVerifier} from "../src/ZKNOX_hybrid.sol";
 
 contract TestHybridVerifier is Test {
     address mldsaAddress;
