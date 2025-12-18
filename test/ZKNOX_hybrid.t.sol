@@ -51,8 +51,8 @@ contract TestHybridVerifier is Test {
         hybrid = new ZKNOX_HybridVerifier();
         address ethAddress = Constants.ADDR;
 
-        string memory data = "0x1111222233334444111122223333444411112222333344441111222233334444";
         bytes32 dataBytes32 = hex"1111222233334444111122223333444411112222333344441111222233334444";
+        string memory data = vm.toString(dataBytes32);
         bytes memory preQuantumSig;
         bytes memory postQuantumSig;
         {
@@ -87,8 +87,8 @@ contract TestHybridVerifier is Test {
         hybrid = new ZKNOX_HybridVerifier();
         address ethAddress = Constants.ADDR;
 
-        string memory data = "0x1111222233334444111122223333444411112222333344441111222233334444";
         bytes32 dataBytes32 = hex"1111222233334444111122223333444411112222333344441111222233334444";
+        string memory data = vm.toString(dataBytes32);
         bytes memory preQuantumSig;
         bytes memory postQuantumSig;
         {

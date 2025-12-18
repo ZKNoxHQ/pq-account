@@ -3,10 +3,10 @@ pragma solidity ^0.8.25;
 import {console} from "forge-std/Test.sol";
 import {BaseScript} from "ETHDILITHIUM/script/BaseScript.sol";
 import {ZKNOX_HybridVerifier} from "../src/ZKNOX_hybrid.sol";
-import {DeployPKContract} from "ETHDILITHIUM/script/Deploy_MLDSA_PK.s.sol";
-import {Script_Deploy_Dilithium} from "ETHDILITHIUM/script/DeployDilithium.s.sol";
-import {Script_Deploy_ECDSA} from "ETHDILITHIUM/script/DeployECDSA.s.sol";
-import {Constants} from "ETHDILITHIUM/test/ZKNOX_seed.sol";
+// import {DeployPKContract} from "ETHDILITHIUM/script/Deploy_MLDSA_PK.s.sol";
+// import {Script_Deploy_Dilithium} from "ETHDILITHIUM/script/DeployDilithium.s.sol";
+// import {Script_Deploy_ECDSA} from "ETHDILITHIUM/script/DeployECDSA.s.sol";
+// import {Constants} from "ETHDILITHIUM/test/ZKNOX_seed.sol";
 
 contract Script_Deploy_Hybrid_Verifier is BaseScript {
     // SPDX-License-Identifier: MIT
